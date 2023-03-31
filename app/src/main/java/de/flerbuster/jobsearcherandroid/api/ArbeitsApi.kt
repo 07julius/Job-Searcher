@@ -49,4 +49,8 @@ object ArbeitsApi : API(
         hashId: String = ""
     ) = subRequest<JobDetailResponse>("/pc/v2/jobdetails/$hashId")
 
+    suspend fun getLogoUrl(
+        hashId: String = ""
+    ) = subRequest<String>("ed/v1/arbeitgeberlogo/$hashId")
+
 }

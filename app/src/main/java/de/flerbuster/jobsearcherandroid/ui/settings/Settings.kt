@@ -1,6 +1,5 @@
 package de.flerbuster.jobsearcherandroid.ui.settings
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -28,7 +27,7 @@ import de.flerbuster.jobsearcher.ui.theme.colorScheme
 import de.flerbuster.jobsearcherandroid.MainActivity
 import de.flerbuster.jobsearcherandroid.ui.selector.Selector
 import de.flerbuster.jobsearcherandroid.ui.slider.Slider
-
+import de.flerbuster.jobsearcherandroid.ui.spacer.SpacerLine
 
 val workTypes = mapOf(
     0 to "alles",
@@ -51,18 +50,6 @@ val workTimes = mapOf(
     "HEIM_TELEARBEIT" to "heim/tele-arbeit",
     "MINIJOB" to "minijob"
 )
-
-@Composable
-fun SpacerLine() =
-    Box(
-        Modifier
-            .height(1.dp)
-            .fillMaxWidth()
-            .background(
-                color = colorScheme.fontColor,
-                shape = RoundedCornerShape(0.dp, 0.dp, 10.dp, 10.dp)
-            )
-    )
 
 @Composable
 fun Settings(
@@ -106,13 +93,9 @@ fun Settings(
                     )
                 }
 
-                Spacer(modifier = Modifier.padding(top = 10.dp))
-
                 SpacerLine()
 
-                Spacer(modifier = Modifier.padding(top = 15.dp))
-
-                // location input
+                // same card height input
                 Row {
                     Text(
                         "gleiche Kartenhöhe: ",
@@ -134,12 +117,7 @@ fun Settings(
                     )
                 }
 
-                Spacer(modifier = Modifier.padding(top = 15.dp))
-
-                SpacerLine()
-
-                Spacer(modifier = Modifier.padding(top = 10.dp))
-
+                SpacerLine(top = 3.dp)
 
                 // location input
                 Row {
@@ -166,11 +144,7 @@ fun Settings(
                     )
                 }
 
-                Spacer(modifier = Modifier.padding(top = 10.dp))
-
-                SpacerLine()
-
-                Spacer(modifier = Modifier.padding(top = 10.dp))
+                Spacer(Modifier.padding(5.dp))
 
                 // work type input
                 Row {
@@ -193,11 +167,7 @@ fun Settings(
                         })
                 }
 
-                Spacer(modifier = Modifier.padding(top = 10.dp))
-
-                SpacerLine()
-
-                Spacer(modifier = Modifier.padding(top = 10.dp))
+                Spacer(Modifier.padding(5.dp))
 
                 // work time input
                 Row {
@@ -219,10 +189,6 @@ fun Settings(
                             onChange()
                         })
                 }
-
-                Spacer(modifier = Modifier.padding(top = 10.dp))
-
-                SpacerLine()
 
                 // perimeter input
                 Row {

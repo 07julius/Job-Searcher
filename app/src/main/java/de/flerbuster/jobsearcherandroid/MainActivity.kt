@@ -18,11 +18,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import de.flerbuster.jobsearcherandroid.api.results.jobDetails.JobDetailResponse
 import de.flerbuster.jobsearcher.ui.job.SearchResponse
 import de.flerbuster.jobsearcher.ui.job.SearchResponseSuccess
 import de.flerbuster.jobsearcher.ui.job.SearchScreen
 import de.flerbuster.jobsearcher.ui.theme.colorScheme
+import de.flerbuster.jobsearcherandroid.api.results.jobDetails.JobDetailResponse
 import de.flerbuster.jobsearcherandroid.ui.job.JobDetailItem
 import kotlinx.coroutines.CoroutineScope
 

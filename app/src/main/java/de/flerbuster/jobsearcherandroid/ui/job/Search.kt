@@ -150,7 +150,7 @@ fun SearchScreen() {
                 )
             }
 
-            Divider(
+            Spacer(
                 modifier = Modifier
                     .width(1.dp)
                     .fillMaxHeight(0.75f)
