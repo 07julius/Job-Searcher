@@ -7,6 +7,7 @@
 .externalNativeBuild
 .cxx
 local.properties
-app/src/androidTest/java/de/flerbuster/jobsearcherandroid/ExampleInstrumentedTest.kt
+app/src/androidTest/java/de/julius/jobsearcherandroid/ExampleInstrumentedTest.kt
 app/src/main/res/values/auth_token.xml
+/.idea/misc.xml
 /.idea/
